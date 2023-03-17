@@ -8,7 +8,7 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form>
+	<form method="post">
 		<div>
 			<label for="name">Name</label>
 			<input type="text" id="name" required>
@@ -22,15 +22,18 @@
 			<input type="password" id="password" required>
 		</div>
 		<div>
-			<label required>Gender</label>
-			<input type="radio" id="gender">Male
-			<input type="radio" id="gender">Female
+			<label>Gender</label>
+			<input type="radio" id="gender" required>Male
+			<input type="radio" id="gender" required>Female
 		</div>
 		<div>
-			<label for="car">Car Brands</label>
-			<input type="checkbox" id="car">BMW
-			<input type="checkbox" id="car">Audi
-			<input type="checkbox" id="car">Mercedez
+			<label for="cars">Car Brands</label>
+			<select id="cars">
+			
+			<option value="BMW">BMW</option>
+			<option value="Audi">Audi</option>
+			<option value="Mercedez">Mercedez</option>
+			</select>
 		</div>
 		<div>
 			<label for="carage">Car Age</label>
